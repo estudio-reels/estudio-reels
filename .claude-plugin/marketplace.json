@@ -1,0 +1,11 @@
+{
+  "name": "estudio-reels",
+  "owner": { "name": "Christian Garcia" },
+  "plugins": [
+    {
+      "name": "estudio-reels",
+      "source": "./",
+      "description": "Edita Reels de Instagram y TikTok con Claude: cortes, subtítulos, animaciones y efectos."
+    }
+  ]
+}
