@@ -1,6 +1,6 @@
 {
   "name": "estudio-reels",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Estudio para editar Reels de Instagram y TikTok con Claude: cortes automáticos, subtítulos, animaciones, efectos de sonido y transcripción local con Whisper (sin API keys).",
   "author": { "name": "Christian Garcia" },
   "keywords": ["reels", "tiktok", "video", "edicion", "whisper", "hyperframes"]

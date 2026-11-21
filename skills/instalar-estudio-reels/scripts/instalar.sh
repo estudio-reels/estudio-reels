@@ -5,7 +5,7 @@
 #   - uv (Python), ffmpeg/ffprobe, Node.js 22+
 #   - la skill video-use (browser-use/video-use) con transcripción local Whisper
 #   - las skills de HyperFrames (animaciones / motion graphics)
-#   - la skill editar-reel de este paquete
+#   - las skills editar-reel y /editar de este paquete
 #   - la carpeta del proyecto (por defecto ~/Reels) con su CLAUDE.md
 #
 # Es idempotente: se puede correr varias veces (sirve también para actualizar).
@@ -213,13 +213,15 @@ else
 fi
 
 # ----------------------------------------------------------------------------
-step "6. Skill editar-reel"
-if [ -d "$PKG_SKILLS/editar-reel" ]; then
-  rm -rf "$SKILLS_DIR/editar-reel"
-  cp -R "$PKG_SKILLS/editar-reel" "$SKILLS_DIR/editar-reel" && ok "Skill editar-reel instalada"
-else
-  fail "No se encontró la skill editar-reel en el paquete"
-fi
+step "6. Skills editar-reel y /editar"
+for SK in editar-reel editar; do
+  if [ -d "$PKG_SKILLS/$SK" ]; then
+    rm -rf "$SKILLS_DIR/$SK"
+    cp -R "$PKG_SKILLS/$SK" "$SKILLS_DIR/$SK" && ok "Skill $SK instalada"
+  else
+    fail "No se encontró la skill $SK en el paquete"
+  fi
+done
 
 # ----------------------------------------------------------------------------
 step "7. Carpeta del proyecto: $REELS_DIR"

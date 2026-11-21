@@ -44,7 +44,9 @@ Tarda entre 15 y 30 minutos. Al final Claude te dice qué quedó listo.
 
 1. Graba en vertical y pasa los videos (por AirDrop o cable, no por WhatsApp) a la carpeta **Videos Celular**.
 2. Abre Claude → **Code** → carpeta **Reels**. Usa una **sesión nueva para cada Reel**.
-3. Escribe, por ejemplo:
+3. Escribe **`/editar`**. Claude te hace las preguntas del Reel en cajas (marca, tono, duración, gancho, datos, logo, sonidos, cierre) y arranca. También puedes adelantar datos: `/editar Nike, tono divertido`.
+
+   Si prefieres escribirlo todo tú, este es un buen primer mensaje:
 
 ```
 Editemos lo de Nike que grabé hoy.

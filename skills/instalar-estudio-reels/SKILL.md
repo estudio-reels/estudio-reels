@@ -48,6 +48,6 @@ Dile a la persona, en máximo 8 líneas:
 - Qué quedó instalado (sin jerga).
 - Que, para editar, abra Claude → pestaña **Code** → carpeta del proyecto, o en Terminal `cd <proyecto>` y `claude`.
 - Que eche sus videos crudos en **"Videos Celular"**.
-- Que un buen primer mensaje es: *"Editemos lo de [marca] que grabé hoy"*.
+- Que para empezar un Reel escriba **`/editar`** y conteste las preguntas (o, si prefiere, *"Editemos lo de [marca] que grabé hoy"*).
 - Que para definir su estilo ponga 2–3 Reels de ejemplo en `referencias/` y diga *"define mi estilo"*.
 - Si quedaron sonidos en `efectos/PENDIENTES.md`, que los baje cuando pueda.

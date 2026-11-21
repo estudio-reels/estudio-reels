@@ -7,7 +7,7 @@ Háblame siempre en español, en términos sencillos y con respuestas cortas. No
 ## Herramientas
 - Edición (transcribir, cortar, subtitular, renderizar): skill **video-use**. La transcripción es local con Whisper; **no uses ni pidas API key de ElevenLabs**.
 - Animaciones, textos, cifras, gráficas, mapas y logos animados: skills de **HyperFrames** (`/hyperframes`).
-- Flujo completo de cada Reel: skill **editar-reel**.
+- Flujo completo de cada Reel: skill **editar-reel**. Para arrancar un Reel con preguntas guiadas: `/editar`.
 - Antes de cualquier comando: `export PATH="$HOME/.local/bin:$PATH"`.
 - Si hay un conector de sonidos (Lots of Sounds, Epidemic Sound), úsalo para buscar efectos que no estén en `efectos/`.
 
