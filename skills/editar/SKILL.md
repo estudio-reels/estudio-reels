@@ -14,6 +14,16 @@ Habla en español, simple y **muy breve**. No expliques el proceso: pregunta y y
 Lo que la persona escribió después de `/editar` (puede venir vacío): **$ARGUMENTS**
 Si ahí ya viene algún dato (por ejemplo la marca o el tono), no lo vuelvas a preguntar.
 
+## 0. ¿Estamos en la carpeta correcta?
+La sesión debe estar en la carpeta del proyecto: la que tiene `CLAUDE.md` y `Videos Celular/`. Si la carpeta actual los tiene, sigue al paso 1 sin decir nada.
+
+Si no los tiene:
+1. **Si no tienes acceso a la Mac de la persona** (sesión en la nube: no existe `~/.claude/skills/editar-reel` ni hay herramienta para cambiar de carpeta), no sigas. Dile solo: *"Abre una sesión nueva en Code → **Local** → carpeta **Reels** y escribe /editar."*
+2. **Busca el proyecto**, en este orden: la ruta guardada en `~/.claude/estudio-reels-proyecto.txt`, luego `~/Reels`. Tiene que tener `CLAUDE.md` y `Videos Celular/`.
+3. **Mueve la sesión ahí** con la herramienta de la app para cambiar de carpeta (`change_directory`, con la ruta absoluta). Dile en una línea: *"Esta sesión no estaba en tu carpeta Reels; la muevo ahí. Dale Permitir."* Si no lo encontraste, usa la herramienta para pedir carpeta sin ruta (`request_directory`) para que la persona la elija. Si esas herramientas no existen (por ejemplo en la Terminal), dile que abra la sesión en la carpeta Reels y para.
+4. **Durante este turno usa rutas absolutas**: el cambio de carpeta se completa al terminar el turno.
+5. **Lee completo `<proyecto>/CLAUDE.md`** y síguelo como instrucciones del proyecto: al no abrir la sesión ahí, no se cargó solo.
+
 ## 1. Mira la carpeta (sin decir nada)
 Antes de preguntar, revisa rápido para armar opciones reales:
 - `Videos Celular/`: qué videos hay y de qué fechas (`ffprobe` → `creation_time`, o la fecha del archivo).

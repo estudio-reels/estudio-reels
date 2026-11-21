@@ -236,6 +236,11 @@ else
   ok "Ya había un CLAUDE.md; se respetó. La plantilla nueva quedó como CLAUDE.plantilla-nueva.md"
 fi
 ok "Carpetas listas: Videos Celular, videos, efectos, logos, referencias"
+# Recordar dónde está el proyecto (lo usa /editar si la sesión se abre en otra carpeta)
+REELS_ABS="$(cd "$REELS_DIR" && pwd)"
+printf '%s\n' "$REELS_ABS" > "$HOME/.claude/estudio-reels-proyecto.txt" \
+  && ok "Ruta del proyecto guardada para /editar: $REELS_ABS" \
+  || warn "No se pudo guardar la ruta del proyecto (/editar buscará ~/Reels)"
 
 # ----------------------------------------------------------------------------
 step "8. Verificación"
